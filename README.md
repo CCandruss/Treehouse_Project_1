@@ -1,2 +1,2 @@
-# Treehouse_Project_1
-First treehouse project
+# Treehouse Project 1
+This is my first project within the treehouse coursework.
