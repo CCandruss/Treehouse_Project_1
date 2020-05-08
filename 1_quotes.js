@@ -55,15 +55,16 @@ function printQuote (message){
     output += '<p class = "quote" >' + obj.quote + '</p>';
   }
   if(obj.source){
-    output += '<p class = "source" >' + obj.source + '</p>';
+    output += '<p class = "source" >' + obj.source;
   }
   if(obj.citation){
-    output += '<p class = "citation" >' + obj.citation + '</p>';
+    output += '<span class = "citation" >' + obj.citation + '</span>';
   } 
   if(obj.year){
-    output += '<p class= "year">' + obj.year + '</p>';
+    output += '<span class= "year">' + obj.year + '</span>';
   }
-  document.getElementById('quote-box').innerHTML = output;
+  output += '</p>'
+  document.getElementById("quote-box").innerHTML = output;
 }
 
 /***
